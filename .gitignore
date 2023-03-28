@@ -1,3 +1,9 @@
+# Local run files
+qa.db
+**/qa.db
+**/*qa*.db
+**/test-reports
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -68,8 +74,8 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-# Sphinx documentation
-docs/_build/
+# documentation
+docs/pydoc/temp/
 
 # PyBuilder
 target/
@@ -91,7 +97,7 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+# pyflow
 __pypackages__/
 
 # Celery stuff
@@ -127,3 +133,26 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# PyCharm
+.idea
+
+# VSCode
+.vscode
+
+# haystack files
+haystack/document_store/qa.db
+data
+**/mlruns/**
+src
+models
+saved_models
+*_build
+rest_api/file-upload/*
+**/feedback_squad_direct.json
+haystack/json-schemas
+
+.DS_Store
+
+# http cache (requests-cache)
+**/http_cache.sqlite
